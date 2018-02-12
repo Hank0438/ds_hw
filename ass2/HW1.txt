@@ -1,0 +1,31 @@
+//宣告一個有n個element的array
+int array[n];
+int array_lenght = sizeof (array) / sizeof (int);
+
+void initial()
+{
+	int i;
+	//讓for loop的每個element的值為0
+	for(i = 0; i < array_length; i++){
+		array[i] = 0;
+	}		
+}
+
+void write(int position, int value){
+	array[position] = value
+}
+
+int read(int location){
+	return array[location]; 
+}
+
+void multyplyAll(int n){
+	if(n == 0){
+		return "error";
+	}
+	//將array中的每個element乘以n
+	for(i = 0; i < array_length; i++){
+		array[i] *= n;
+	}
+	return array;
+}

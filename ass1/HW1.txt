@@ -1,0 +1,16 @@
+//將數列宣告為陣列
+int arr = [1,2,3,.....,n]
+
+//在迴圈內宣告變數x儲存比較後的最大值，變數y儲存比較後的最小值
+//透過迴圈從第i項和下一項比較大小，較大值成為max新的值，較小值成為min新的值
+int max,min;
+for(int i=0; i < arr.length-1; i++){
+	int max = arr[i];
+	int min = arr[i];
+	if(arr[i+1] > max){
+		max = arr[i+1];
+	}
+	if(arr[i+1] < min){
+		min = arr[i+1];
+	}
+}
